@@ -9,3 +9,4 @@ pylcs
 transformers
 torch
 accelerate
+langchain-huggingface

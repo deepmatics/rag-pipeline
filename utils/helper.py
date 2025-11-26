@@ -15,8 +15,9 @@ import PyPDF2
 import pylcs
 import pandas as pd
 import dill
+import os
 
-def generate_summary_with_hf_model(text_to_summarize, model_name="microsoft/phi-2-mini-instruct"):
+def generate_summary_with_hf_model(text_to_summarize, model_name="google/gemma-3-4b-it"):
     """
     Generates a summary of a given text using a Hugging Face transformer model.
 
