@@ -1,6 +1,0 @@
-prompt:
-  summarize: '''Write an extensive summary of the following: 
-  
-              {text} 
-              
-              SUMMARY:'''
