@@ -6,4 +6,4 @@ path = snapshot_download(
     repo_id="vectara/open_ragbench", 
     repo_type="dataset"
 )
-print(f"Downloaded to: {path}")ß
+print(f"Downloaded to: {path}")
