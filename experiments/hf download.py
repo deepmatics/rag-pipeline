@@ -1,9 +1,11 @@
-#download open rag dataset
-from huggingface_hub import snapshot_download
+from transformers import AutoModelForCausalLM, AutoTokenizer
 
-# This explicitly defines it as a dataset
-path = snapshot_download(
-    repo_id="vectara/open_ragbench", 
-    repo_type="dataset"
+model_name = "Qwen/Qwen3-4B-Instruct-2507"
+
+# load the tokenizer and the model
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+model = AutoModelForCausalLM.from_pretrained(
+    model_name,
+    torch_dtype="auto",
+    device_map="auto"
 )
-print(f"Downloaded to: {path}")
