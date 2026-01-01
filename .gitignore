@@ -6,6 +6,5 @@
 **/.DS_Store
 **/.env
 **/notes.txt
-**/chroma_db/
 **/models/
 **/OpenRagBench
