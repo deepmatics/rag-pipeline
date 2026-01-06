@@ -45,3 +45,33 @@
 | v.1 | Naive RAG | 50% | 25% | 25% |
 | v.2| Hybrid Search | *Pending* | *Pending* | *Pending* |
 | v1.0 | Re-ranking (Cross-Encoder) | *Pending* | *Pending* | *Pending* |
+
+
+# Project Directory Structure
+
+```text
+rag-project/
+├── .venv/                 # Virtual environment
+├── config/                # Configuration files (YAML/TOML)
+│   ├── base_config.yaml
+│   └── experimental.yaml
+├── data/                  # Local datasets (Git-ignored)
+│   ├── raw/
+│   └── processed/
+├── docs/                  # Project documentation
+│   ├── benchmarks.md      # Performance history
+│   └── architecture.md    # Design patterns and logic
+├── notebooks/             # R&D and prototyping
+├── src/                   # Source Logic
+│   ├── __init__.py
+│   ├── components/        # Strategy Pattern implementations
+│   │   ├── retriever.py   # Vector, Hybrid, BM25 logic
+│   │   ├── generator.py   # LLM interaction logic
+│   │   └── evaluator.py   # DeepEval metrics
+│   ├── utils/             # JSON cleaning, text processing
+│   ├── factory.py         # Build pipeline based on config
+│   └── pipeline.py        # Orchestration (retrieve -> gen -> eval)
+├── tests/                 # Unit tests
+├── main.py                # Entry point
+├── README.md              # Project overview
+└── pyproject.toml         # Dependencies (uv/pip)
