@@ -1,5 +1,5 @@
-- A
-  - B
+input_data: 
+  path: "./data/input/OpenRagBench/pdf/arxiv/corpus/" 
 
-- C
-  - D
+hf:
+  embeddings: "/Users/syenwc6b/.cache/huggingface/hub/models--google--embeddinggemma-300m/snapshots/ea082e2d5ef48d95602e8589f0ae7c2799987143"
