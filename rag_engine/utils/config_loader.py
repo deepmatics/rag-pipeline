@@ -1,7 +1,7 @@
 import yaml
 
-class ConfigLoader:
+class YamlFile:
     @staticmethod
-    def load_yaml(file_path):
+    def load(file_path):
         with open(file_path, 'r') as f:
             return yaml.safe_load(f)

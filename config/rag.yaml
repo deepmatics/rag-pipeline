@@ -2,4 +2,13 @@ input_data:
   path: "./data/input/OpenRagBench/pdf/arxiv/corpus/" 
 
 hf:
-  embeddings: "/Users/syenwc6b/.cache/huggingface/hub/models--google--embeddinggemma-300m/snapshots/ea082e2d5ef48d95602e8589f0ae7c2799987143"
+  embeddings: "~/.cache/huggingface/hub/models--google--embeddinggemma-300m/snapshots/ea082e2d5ef48d95602e8589f0ae7c2799987143/"
+  llm_model: "~/.cache/huggingface/hub/models--google--gemma-3-4b-it/snapshots/fb45cab2e2d05204ac7e12f3051d144981d59f41/"
+
+chunking:
+  size: 1000
+  overlap: 150
+
+vector_db:
+  batch_size: 100
+  persist_dir: "./chroma_db/OpenRagBench"

@@ -1,0 +1,8 @@
+system: |
+      Answer the question based only on the following context shared. 
+      1. be crisp with your answers
+      2. if the context doesn't have the answer, then mention that you don't know
+      {context}
+
+      Question: 
+      {question}

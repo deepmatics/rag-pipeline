@@ -2827,6 +2827,14 @@ wheels = [
 ]
 
 [[package]]
+name = "pyint"
+version = "1.1.0"
+source = { registry = "https://pypi.org/simple" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/44/94/d0d95d878cb7dd119b81a7f841ab48730e6f2969953330f1bb98385fcbe3/pyint-1.1.0-py3-none-any.whl", hash = "sha256:497f15c521bcd6833dfb9bc973ef40874582aedc9ecd43e76910a19cd1785376", size = 3138, upload-time = "2018-11-09T13:40:32.677Z" },
+]
+
+[[package]]
 name = "pypika"
 version = "0.48.9"
 source = { registry = "https://pypi.org/simple" }
@@ -3054,6 +3062,7 @@ dependencies = [
     { name = "langchain-community" },
     { name = "langchain-core" },
     { name = "langchain-huggingface" },
+    { name = "pyint" },
     { name = "pyyaml" },
     { name = "ragas" },
     { name = "sentence-transformers" },
@@ -3075,6 +3084,7 @@ requires-dist = [
     { name = "langchain-community", specifier = ">=0.4.1" },
     { name = "langchain-core", specifier = ">=1.2.5" },
     { name = "langchain-huggingface", specifier = ">=1.2.0" },
+    { name = "pyint", specifier = ">=1.1.0" },
     { name = "pyyaml", specifier = ">=6.0.3" },
     { name = "ragas", specifier = ">=0.4.2" },
     { name = "sentence-transformers", specifier = ">=5.2.0" },
