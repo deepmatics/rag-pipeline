@@ -8,3 +8,6 @@
 **/notes.txt
 **/models/
 **/OpenRagBench**
+**/.deepeval
+!**/OpenRagBench/.gitkeep
+!**/.gitkeep
