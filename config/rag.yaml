@@ -6,8 +6,8 @@ hf:
   llm_model: "~/.cache/huggingface/hub/models--google--gemma-3-4b-it/snapshots/fb45cab2e2d05204ac7e12f3051d144981d59f41/"
 
 chunking:
-  size: 1000
-  overlap: 150
+  size: 500
+  overlap: 100
 
 vector_db:
   batch_size: 100

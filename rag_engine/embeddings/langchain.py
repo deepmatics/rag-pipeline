@@ -1,7 +1,7 @@
 from langchain_huggingface import HuggingFaceEmbeddings
 from rag_engine.embeddings.base import BaseEmbeddingModel
 
-class LangChainEmbeddingModel(BaseEmbeddingModel):
+class LangchainEmbeddingModel(BaseEmbeddingModel):
     def __init__(self, model_name: str):
         """
         Initialize the HuggingFace embedding model via LangChain.

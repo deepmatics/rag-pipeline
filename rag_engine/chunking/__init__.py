@@ -1,2 +1,2 @@
 from .base import BaseChunker
-from .recursive import LangChainRecursive
+from .recursive import LangchainRecursive

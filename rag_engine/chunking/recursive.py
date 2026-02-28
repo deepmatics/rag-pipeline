@@ -2,7 +2,7 @@ from typing import List
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from rag_engine.chunking.base import BaseChunker
 
-class LangChainRecursive(BaseChunker):
+class LangchainRecursive(BaseChunker):
     def __init__(self, chunk_config: dict):
         self.chunk_size = chunk_config.get("size", 1000)
         self.chunk_overlap = chunk_config.get("overlap", 200)

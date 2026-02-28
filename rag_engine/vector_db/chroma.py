@@ -1,11 +1,11 @@
 from langchain_chroma import Chroma
 from rag_engine.vector_db.base import BaseVectorDB
 
-class LangChainChroma(BaseVectorDB):
+class LangchainChroma(BaseVectorDB):
 
     def __init__(self, embedding_func, persist_dir: str):
         self.client = Chroma(
-            embedding_function=embedding_func,
+            embedding_function=embedding_func.load(),
             persist_directory=persist_dir
         )
 

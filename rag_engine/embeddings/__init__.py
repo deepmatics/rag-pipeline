@@ -1,1 +1,1 @@
-from .langchain import LangChainEmbeddingModel
+from .langchain import LangchainEmbeddingModel
